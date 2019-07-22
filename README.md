@@ -28,6 +28,17 @@ const server = createServer(requestHandler)
 server.listen(1234)
 ```
 
+## File Uploads
+
+File uploads will work out of the box, via multipart form parsing. The only thing you need to do is whitelist the types of files you want to upload. This can be done via one of two ways:
+
+ 1. *Environment variable (recommended):* set `ALLOWED_ATTACHMENT_MIMES` to a comma-separated list of files you want to whitelist, for example: `image/png,text/html`
+ 2. *Pass it in to the options argument:* by passing in a `fileTypes` option, you will be able to overwrite this per-request if you pass in an array of mime types. So your code might look like:
+
+```js
+const payload = await parseBody(request, { fileTypes: [ 'image/png', 'text/html' ] })
+```
+
 ## Tests
 
 ```
