@@ -2,7 +2,7 @@
 
 The easiest to use body parser for Node.js applications. Works with any content type, and comes standard with a few useful ones.
 
-This module comes from the output of the [Frameworkless.js] online course.
+This module comes from the output of the [Frameworkless.js](https://frameworkless.js.org) online course.
 
 ## Installing
 
