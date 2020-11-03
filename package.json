@@ -1,6 +1,6 @@
 {
   "name": "@frameworkless/bodyparser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The simplest and easiest to use body parser for formdata.",
   "main": "index.js",
   "scripts": {
